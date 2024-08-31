@@ -1,0 +1,120 @@
+
+
+
+
+
+.heading {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: xx-large;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.product{
+    display: flex; 
+     flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+.product-cart {
+    border-radius: 20px;
+    flex: 1 1 300px;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    /* position: relative; */
+}
+
+.product-cart:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-cart img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product-cart img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.product-info {
+    background: linear-gradient(135deg, rgb(156, 220, 46), lightcoral);
+    padding: 20px;
+    flex: 1;
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+    top: 0;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.product-info:hover {
+    background-color: #ffb6c1;
+    transform: translateY(-5px);
+}
+
+.product-info h4 {
+    font-size: x-large;
+    margin-bottom: 10px;
+    color: darkred;
+    font-family: 'Arial Black', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.product-info button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bolder;
+    background: linear-gradient(135deg, #ed98d1, #eba2e0);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info button:hover {
+    background: linear-gradient(135deg, #e32f2f, #ff5555);
+    font-size: large;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-cart a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.product-cart::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-cart:hover::before {
+    opacity: 1;
+}
+

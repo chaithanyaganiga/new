@@ -1,0 +1,90 @@
+#footyhead {
+    position: absolute;
+    top: 85%;
+    right: 21%;
+    font-weight: 700;
+}
+#shopbutton{
+    position: absolute;
+    top: 90%;
+    right: 22%;
+    font-size: x-large;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+.hero-section :hover{
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+}
+.heading{
+    text-align: center;
+    font-weight:900;
+    font-size: xx-large;
+    margin-top: 90px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 35px;
+
+    justify-content: flex-start;
+    margin: 100px auto;
+}
+.product-cart{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.3s,box-shadow 3s;
+    flex: 1 1 500px;
+    max-width: 700px;
+}
+.product-cart button:hover{
+    transform: translateY(-10px);
+    border: 7px solid black;
+}
+.product-cart img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.product-info{
+padding: 15px;
+flex: 1;
+}
+.product-info h4{
+    font-size: x-large;
+}
+.product-info p{
+    font-size: 30;
+    color: #4505d8;
+    margin-bottom: 10px;
+}
+.product-info button{
+    padding: 10px;
+    background-color: #ec650b;
+    color: rgb( 0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+    font-weight  : 600;
+}
+.product-info button:hover{
+    background: rgb(11, 230, 201);
+}
+
+#pic:hover{
+    content: url(./images/darkshoe2.jpeg);
+}
+#pic1:hover{
+    content: url(./images/lightshoe2.jpeg);
+}
+#pic2:hover{
+    content: url(./images/shorts2.jpeg);
+}
+#pic3:hover{
+    content: url(./images/bottle2.jpeg);
+}
