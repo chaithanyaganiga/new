@@ -77,14 +77,14 @@ flex: 1;
 }
 
 #pic:hover{
-    content: url(./images/darkshoe2.jpeg);
+    content: url(darkshoe2.jpeg);
 }
 #pic1:hover{
-    content: url(./images/lightshoe2.jpeg);
+    content: url(lightshoe2.jpeg);
 }
 #pic2:hover{
-    content: url(./images/shorts2.jpeg);
+    content: url(shorts2.jpeg);
 }
 #pic3:hover{
-    content: url(./images/bottle2.jpeg);
+    content: url(bottle2.jpeg);
 }
